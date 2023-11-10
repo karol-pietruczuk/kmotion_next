@@ -6,11 +6,14 @@ export default function Home() {
         <main className='kmotion-website'>
             <section className='logo-section'>
                 <header className='logo-section__header'>
-                    <h1 className='logo-section__header--h1'>
+                    <h1 className='logo-section__header--title'>
                         KMotion
                     </h1>
+                    <h2 className='logo-section__header--desc'>
+                        Automatyka przemysłowa
+                    </h2>
                     <Image
-                        className='logo-section__header--img'
+                        className='logo-section__header--logo'
                         src="/kmotion.svg"
                         alt="KMotion Logo"
                         width={100}
@@ -18,6 +21,51 @@ export default function Home() {
                         priority
                     />
                 </header>
+            </section>
+            <section className='service-section'>
+                <header className='service-section__header'>
+                    <h2 className='service-section__header--title'>
+                        Czym się zajmujemy?
+                    </h2>
+                </header>
+                <article className='service-section__article'>
+                    <ol className='service-section__article--services__even'>
+                        <li className='service-section__article--services__even-hex'></li>
+                        <li className='service-section__article--services__even-hex'></li>
+                        <li className='service-section__article--services__even-hex'></li>
+                        <li className='service-section__article--services__even-hex'></li>
+                    </ol>
+                    <ol className='service-section__article--services__odd'>
+                        <li className='service-section__article--services__odd-hex'></li>
+                        <li className='service-section__article--services__odd-hex'></li>
+                        <li className='service-section__article--services__odd-hex'></li>
+                        <li className='service-section__article--services__odd-hex'></li>
+                    </ol>
+                    <ol className='service-section__article--services__even'>
+                    <li className='service-section__article--services__even-hex'></li>
+                        <li className='service-section__article--services__even-hex'></li>
+                        <li className='service-section__article--services__even-hex'></li>
+                        <li className='service-section__article--services__even-hex'></li>
+                    </ol>
+                    <ol className='service-section__article--services__odd'>
+                    <li className='service-section__article--services__odd-hex'></li>
+                        <li className='service-section__article--services__odd-hex'></li>
+                        <li className='service-section__article--services__odd-hex'></li>
+                        <li className='service-section__article--services__odd-hex'></li>
+                    </ol>
+                    <ol className='service-section__article--services__even'>
+                    <li className='service-section__article--services__even-hex'></li>
+                        <li className='service-section__article--services__even-hex'></li>
+                        <li className='service-section__article--services__even-hex'></li>
+                        <li className='service-section__article--services__even-hex'></li>
+                    </ol>
+                    <ol className='service-section__article--services__odd'>
+                    <li className='service-section__article--services__odd-hex'></li>
+                        <li className='service-section__article--services__odd-hex'></li>
+                        <li className='service-section__article--services__odd-hex'></li>
+                        <li className='service-section__article--services__odd-hex'></li>
+                    </ol>
+                </article>
             </section>
         </main>
     )
