@@ -29,42 +29,60 @@ export default function Home() {
                     </h2>
                 </header>
                 <article className='service-section__article'>
-                    <ol className='service-section__article--services__even'>
-                        <li className='service-section__article--services__even-hex'></li>
-                        <li className='service-section__article--services__even-hex'></li>
-                        <li className='service-section__article--services__even-hex'></li>
-                        <li className='service-section__article--services__even-hex'></li>
-                    </ol>
-                    <ol className='service-section__article--services__odd'>
-                        <li className='service-section__article--services__odd-hex'></li>
-                        <li className='service-section__article--services__odd-hex'></li>
-                        <li className='service-section__article--services__odd-hex'></li>
-                        <li className='service-section__article--services__odd-hex'></li>
-                    </ol>
-                    <ol className='service-section__article--services__even'>
-                    <li className='service-section__article--services__even-hex'></li>
-                        <li className='service-section__article--services__even-hex'></li>
-                        <li className='service-section__article--services__even-hex'></li>
-                        <li className='service-section__article--services__even-hex'></li>
-                    </ol>
-                    <ol className='service-section__article--services__odd'>
-                    <li className='service-section__article--services__odd-hex'></li>
-                        <li className='service-section__article--services__odd-hex'></li>
-                        <li className='service-section__article--services__odd-hex'></li>
-                        <li className='service-section__article--services__odd-hex'></li>
-                    </ol>
-                    <ol className='service-section__article--services__even'>
-                    <li className='service-section__article--services__even-hex'></li>
-                        <li className='service-section__article--services__even-hex'></li>
-                        <li className='service-section__article--services__even-hex'></li>
-                        <li className='service-section__article--services__even-hex'></li>
-                    </ol>
-                    <ol className='service-section__article--services__odd'>
-                    <li className='service-section__article--services__odd-hex'></li>
-                        <li className='service-section__article--services__odd-hex'></li>
-                        <li className='service-section__article--services__odd-hex'></li>
-                        <li className='service-section__article--services__odd-hex'></li>
-                    </ol>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
+                    <div className='service-section__article--service'>
+                        <div className='service-section__article--service-hex'></div>
+                    </div>
                 </article>
             </section>
         </main>
