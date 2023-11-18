@@ -7,7 +7,8 @@ import useWindowDimensions from './hooks/useWindowDimension';
 export default function Home() {
     const { width } = useWindowDimensions();
     return (
-        <main className='kmotion-website'>
+        // <main className='kmotion-website'>
+        <>
             <section className='logo-section'>
                 <header className='logo-section__header'>
                     <h1 className='logo-section__header--title'>
@@ -80,6 +81,6 @@ export default function Home() {
                         </div>
                 </article>
             </section>
-        </main>
+        </>
     )
 }

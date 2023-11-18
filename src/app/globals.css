@@ -16,6 +16,12 @@
   }
 }
 
+html {
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+  scroll-snap-stop: always;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -25,9 +31,9 @@ body {
     )
     rgb(var(--background-start-rgb));
     user-select: none;
-    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding-bottom: 10px;
 }
 
 ::-webkit-scrollbar {

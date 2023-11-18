@@ -1,10 +1,5 @@
-.kmotion-website {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .logo-section {
+    scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,11 +38,13 @@
 }
 
 .service-section {
+    scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     margin: 4vh auto 4vh;
+    padding-top: 20px;
     margin-bottom: 50px;
 }
 
