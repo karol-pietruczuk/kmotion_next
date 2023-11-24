@@ -1,13 +1,16 @@
 'use client'
 
-import Image from 'next/image'
-import './page.css';
+import Image from 'next/image';
+import './logo-section.css';
+import './service-section.css';
+import './recommendation-section.css';
+import './contact-section.css';
+import './footer.css';
 import useWindowDimensions from './hooks/useWindowDimension';
 
 export default function Home() {
     const { width } = useWindowDimensions();
     return (
-        // <main className='kmotion-website'>
         <>
             <section className='logo-section'>
                 <header className='logo-section__header'>
@@ -81,6 +84,67 @@ export default function Home() {
                         </div>
                 </article>
             </section>
+            <section className='recommendation-section'>
+                <header className='recommendation-section__header'>
+                    <h2 className='recommendation-section__header--title'>
+                        Dlaczego warto nas wybrać?
+                    </h2>
+                </header>
+                <article className='recommendation-section__article'>
+                    <ul className='recommendation-section__article__list'>
+                        <li className='recommendation-section__article__list-item'>
+                            <div className='recommendation-section__article__list-item--triangle'>
+                                <div className='recommendation-section__article__list-item--triangle-implementation'></div>
+                            </div>
+                            <p className='recommendation-section__article__list-item--desc'>
+                                Program napisany w sposób uporządkowany, umożliwiający rozbudowę systemu
+                            </p>
+                        </li>
+                        <li className='recommendation-section__article__list-item'>
+                            <div className='recommendation-section__article__list-item--triangle'>
+                                <div className='recommendation-section__article__list-item--triangle-implementation'></div>
+                            </div>
+                            <p className='recommendation-section__article__list-item--desc'>
+                                Design wizualizacji w nowoczesnym stylu
+                            </p>
+                        </li>
+                        <li className='recommendation-section__article__list-item'>
+                            <div className='recommendation-section__article__list-item--triangle'>
+                                <div className='recommendation-section__article__list-item--triangle-implementation'></div>
+                            </div>
+                            <p className='recommendation-section__article__list-item--desc'>
+                                Schemat elektryczny wykonany z uwzględnieniem najmniejszych szczegółów
+                            </p>
+                        </li>
+                        <li className='recommendation-section__article__list-item'>
+                            <div className='recommendation-section__article__list-item--triangle'>
+                                <div className='recommendation-section__article__list-item--triangle-implementation'></div>
+                            </div>
+                            <p className='recommendation-section__article__list-item--desc'>
+                                Wsparcie powykonawcze
+                            </p>
+                        </li>
+                        <li className='recommendation-section__article__list-item'>
+                            <div className='recommendation-section__article__list-item--triangle'>
+                                <div className='recommendation-section__article__list-item--triangle-implementation'></div>
+                            </div>
+                            <p className='recommendation-section__article__list-item--desc'>
+                                Pomoc w naprawie usterek i awarii
+                            </p>
+                        </li>
+                        <li className='recommendation-section__article__list-item'>
+                            <div className='recommendation-section__article__list-item--triangle'>
+                                <div className='recommendation-section__article__list-item--triangle-implementation'></div>
+                            </div>
+                            <p className='recommendation-section__article__list-item--desc'>
+                                Indywidualne podejście do klienta i problemu
+                            </p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section className='contact-section'></section>
+            <footer className='footer'>Made with Heart & Passion by KMotion | Copyrights Kmotion 2023 </footer>
         </>
     )
 }

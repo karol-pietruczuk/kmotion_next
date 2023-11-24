@@ -1,51 +1,12 @@
-.logo-section {
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    min-height: 440px;
-    width: 100%;
-    margin-bottom: 4vh;
-}
-
-.logo-section__header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-section__header--title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #312C49;
-    line-height: 1;
-    text-align: center;
-}
-
-.logo-section__header--desc {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #312C49;
-    text-align: center;
-}
-
-.logo-section__header--logo {
-    padding-top: 40px;
-    pointer-events: none;
-}
-
 .service-section {
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 4vh auto 4vh;
-    padding-top: 20px;
-    margin-bottom: 50px;
+    min-height: 100vh;
+    margin: 4vh auto;
+    padding: 8vh 0;
 }
 
 .service-section__header {
@@ -65,7 +26,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: 100px;
+    padding-bottom: 10vh;
     position: relative;
 }
 
@@ -179,14 +140,6 @@
 }
 
 @media (min-width: 355px) and (max-width: 460px) {
-    .logo-section__header--title {
-        font-size: 4rem;
-    }
-    
-    .logo-section__header--desc {
-        font-size: 1.5rem;
-    }
-
     .service-section__header--title {
         font-size: 1.5rem;
     }
@@ -221,14 +174,6 @@
 }
 
 @media (min-width: 460px) and (max-width: 570px) {
-    .logo-section__header--title {
-        font-size: 4rem;
-    }
-    
-    .logo-section__header--desc {
-        font-size: 1.5rem;
-    }
-
     .service-section__header--title {
         font-size: 1.5rem;
     }
@@ -267,14 +212,6 @@
 }
 
 @media (min-width: 570px) and (max-width: 620px) {
-    .logo-section__header--title {
-        font-size: 5rem;
-    }
-    
-    .logo-section__header--desc {
-        font-size: 2rem;
-    }
-
     .service-section__header--title {
         font-size: 2rem;
     }
@@ -317,14 +254,6 @@
 }
 
 @media (min-width: 620px) and (max-width: 760px) {
-    .logo-section__header--title {
-        font-size: 5rem;
-    }
-    
-    .logo-section__header--desc {
-        font-size: 2rem;
-    }
-
     .service-section__header--title {
         font-size: 2rem;
     }
@@ -363,14 +292,6 @@
 }
 
 @media (min-width: 760px) and (max-width: 930px) {
-    .logo-section__header--title {
-        font-size: 5rem;
-    }
-    
-    .logo-section__header--desc {
-        font-size: 2rem;
-    }
-
     .service-section__header--title {
         font-size: 2rem;
     }
@@ -404,7 +325,6 @@
     }
 
     .service-section__article--service:nth-child(5n - 1) {
-        /* margin-left: calc(50vw - 163px); */
         margin-left: calc(50vw - 235px);
     }
 
@@ -414,14 +334,6 @@
 }
 
 @media (min-width: 930px) and (max-width: 1150px) {
-    .logo-section__header--title {
-        font-size: 5rem;
-    }
-    
-    .logo-section__header--desc {
-        font-size: 2rem;
-    }
-
     .service-section__header--title {
         font-size: 2.6rem;
     }
@@ -451,7 +363,6 @@
     }
 
     .service-section__article--service:nth-child(4n - 1) {
-        /* margin-left: calc(50vw - 163px); */
         margin-left: calc(50vw - 244px);
     }
 
@@ -461,14 +372,6 @@
 }
 
 @media (min-width: 1150px) and (max-width: 1360px) {
-    .logo-section__header--title {
-        font-size: 5rem;
-    }
-    
-    .logo-section__header--desc {
-        font-size: 2rem;
-    }
-
     .service-section__header--title {
         font-size: 2.6rem;
     }
@@ -511,14 +414,6 @@
 }
 
 @media (min-width: 1360px) and (max-width: 1600px) {
-    .logo-section__header--title {
-        font-size: 5rem;
-    }
-    
-    .logo-section__header--desc {
-        font-size: 2rem;
-    }
-
     .service-section__header--title {
         font-size: 2.6rem;
     }
@@ -565,14 +460,6 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2400px) {
-    .logo-section__header--title {
-        font-size: 8rem;
-    }
-    
-    .logo-section__header--desc {
-        font-size: 4rem;
-    }
-
     .service-section__header--title {
         font-size: 4rem;
     }
@@ -623,14 +510,6 @@
 }
 
 @media (min-width: 2400px) {
-    .logo-section__header--title {
-        font-size: 8rem;
-    }
-    
-    .logo-section__header--desc {
-        font-size: 4rem;
-    }
-
     .service-section__header--title {
         font-size: 4rem;
     }
@@ -646,9 +525,9 @@
     }
 
     .service-section__article--service-hex--desc {
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding: 18px 38px;
-        height: 234px;
+        height: 351px;
     }
 
     .service-section__article--service:nth-child(7n - 6) {

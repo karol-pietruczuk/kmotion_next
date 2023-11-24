@@ -1,0 +1,279 @@
+.recommendation-section {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    margin: 4vh auto;
+    padding: 8vh 0;
+}
+
+.recommendation-section__header {
+    margin-bottom: 15vh;
+}
+
+.recommendation-section__header--title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #312C49;
+    padding: 0 2vw;
+    line-height: 1;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.recommendation-section__article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.recommendation-section__article__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 4vh;
+    padding: 2vh 6vw;
+}
+
+.recommendation-section__article__list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 4vw;
+}
+
+.recommendation-section__article__list-item--triangle {
+    transform: rotate(90deg);
+}
+
+.recommendation-section__article__list-item--triangle-implementation {
+	position: relative;
+	background-color: #312c49;
+	text-align: left;
+    transition: ease-in-out 0.2s;
+}
+.recommendation-section__article__list-item--triangle-implementation:before, 
+.recommendation-section__article__list-item--triangle-implementation:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+.recommendation-section__article__list-item--triangle-implementation, 
+.recommendation-section__article__list-item--triangle-implementation:before, 
+.recommendation-section__article__list-item--triangle-implementation:after {
+	width:  1rem;
+	height: 1rem;
+	border-top-right-radius: 50%;
+}
+
+.recommendation-section__article__list-item--triangle-implementation {
+	transform: rotate(-60deg) skewX(-30deg) scale(1,.866);
+}
+.recommendation-section__article__list-item--triangle-implementation:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+.recommendation-section__article__list-item--triangle-implementation:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+}
+
+.recommendation-section__article__list-item:hover .recommendation-section__article__list-item--triangle-implementation {
+    background-color: #B42247;
+}
+
+.recommendation-section__article__list-item--desc {
+    text-align: left;
+    font-size: 0.8rem;
+    filter: brightness(0.8);
+    transition: ease-in-out 0.2s;
+}
+
+.recommendation-section__article__list-item:hover .recommendation-section__article__list-item--desc {
+    filter: brightness(1.2);
+}
+
+@media (min-width: 320px) and (max-width: 355px) {
+    .recommendation-section__article__list-item {
+        column-gap: 3vw;
+    }
+}
+
+@media (min-width: 355px) and (max-width: 460px) {
+    .recommendation-section__header--title {
+        font-size: 1.5rem;
+    }
+
+    .recommendation-section__article__list-item {
+        column-gap: 3vw;
+    }
+
+    .recommendation-section__article__list-item--desc {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 570px) {
+    .recommendation-section__header--title {
+        font-size: 1.5rem;
+    }
+    
+    .recommendation-section__article__list-item {
+        column-gap: 3vw;
+    }
+
+    .recommendation-section__article__list-item--desc {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 570px) and (max-width: 620px) {
+    .recommendation-section__header--title {
+        font-size: 2rem;
+    }
+    
+    .recommendation-section__article__list-item {
+        column-gap: 3vw;
+    }
+
+    .recommendation-section__article__list-item--desc {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 620px) and (max-width: 760px) {
+    .recommendation-section__header--title {
+        font-size: 2rem;
+    }
+    
+    .recommendation-section__article__list-item {
+        column-gap: 3vw;
+    }
+
+    .recommendation-section__article__list-item--desc {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 930px) {
+    .recommendation-section__header--title {
+        font-size: 2rem;
+    }
+    
+    .recommendation-section__article__list-item {
+        column-gap: 3vw;
+    }
+
+    .recommendation-section__article__list-item--desc {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 930px) and (max-width: 1150px) {
+    .recommendation-section__header--title {
+        font-size: 2.6rem;
+    }
+    
+    .recommendation-section__article__list-item {
+        column-gap: 2vw;
+    }
+
+    .recommendation-section__article__list-item--desc {
+        font-size: 1.2rem;
+    }
+
+    .recommendation-section__article__list-item--triangle-implementation, 
+    .recommendation-section__article__list-item--triangle-implementation:before, 
+    .recommendation-section__article__list-item--triangle-implementation:after {
+        width:  1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media (min-width: 1150px) and (max-width: 1360px) {
+    .recommendation-section__header--title {
+        font-size: 2.6rem;
+    }
+    
+    .recommendation-section__article__list-item {
+        column-gap: 2vw;
+    }
+
+    .recommendation-section__article__list-item--desc {
+        font-size: 1.2rem;
+    }
+
+    .recommendation-section__article__list-item--triangle-implementation, 
+    .recommendation-section__article__list-item--triangle-implementation:before, 
+    .recommendation-section__article__list-item--triangle-implementation:after {
+        width:  1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media (min-width: 1360px) and (max-width: 1600px) {
+    .recommendation-section__header--title {
+        font-size: 2.6rem;
+    }
+    
+    .recommendation-section__article__list-item {
+        column-gap: 2vw;
+    }
+
+    .recommendation-section__article__list-item--desc {
+        font-size: 1.2rem;
+    }
+
+    .recommendation-section__article__list-item--triangle-implementation, 
+    .recommendation-section__article__list-item--triangle-implementation:before, 
+    .recommendation-section__article__list-item--triangle-implementation:after {
+        width:  1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 2400px) {
+    .recommendation-section__header--title {
+        font-size: 4rem;
+    }
+    
+    .recommendation-section__article__list-item {
+        column-gap: 1.5vw;
+    }
+
+    .recommendation-section__article__list-item--desc {
+        font-size: 1.6rem;
+    }
+
+    .recommendation-section__article__list-item--triangle-implementation, 
+    .recommendation-section__article__list-item--triangle-implementation:before, 
+    .recommendation-section__article__list-item--triangle-implementation:after {
+        width:  2rem;
+        height: 2rem;
+    }
+}
+
+@media (min-width: 2400px) {
+    .recommendation-section__header--title {
+        font-size: 4rem;
+    }
+    
+    .recommendation-section__article__list-item {
+        column-gap: 1.5vw;
+    }
+
+    .recommendation-section__article__list-item--desc {
+        font-size: 2rem;
+    }
+
+    .recommendation-section__article__list-item--triangle-implementation, 
+    .recommendation-section__article__list-item--triangle-implementation:before, 
+    .recommendation-section__article__list-item--triangle-implementation:after {
+        width:  3rem;
+        height: 3rem;
+    }
+}
