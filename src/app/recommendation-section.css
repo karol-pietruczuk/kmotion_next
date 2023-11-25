@@ -56,7 +56,7 @@
 	position: relative;
 	background-color: #312c49;
 	text-align: left;
-    transition: ease-in-out 0.2s;
+    transition: linear 0.2s;
 }
 .recommendation-section__article__list-item--triangle-implementation:before, 
 .recommendation-section__article__list-item--triangle-implementation:after {

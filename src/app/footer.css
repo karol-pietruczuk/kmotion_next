@@ -1,95 +1,64 @@
-@media (max-width: 236px) {}
+.footer {
+    height: 3vh;
+    padding: 0 0 1vh 1vw;
+}
 
-@media (min-width: 236px) and (max-width: 310px) {}
+@media (max-width: 236px) {
+    .footer {
+        font-size: 0.4rem;
+    }
+}
 
-@media (min-width: 310px) and (max-width: 320px) {}
+@media (min-width: 236px) and (max-width: 310px) {
+    .footer {
+        font-size: 0.44rem;
+    }
+}
+
+@media (min-width: 310px) and (max-width: 320px) {
+    .footer {
+        font-size: 0.58rem;
+    }
+}
 
 @media (min-width: 320px) and (max-width: 355px) {
-    .service-section__article--service-hex--desc {
-        font-size: 0.5rem;
-        padding: 12px 14px;
-        height: 106.2px;
+    .footer {
+        font-size: 0.6rem;
     }
 }
 
 @media (min-width: 355px) and (max-width: 460px) {
-    .service-section__header--title {
-        font-size: 1.5rem;
+    .footer {
+        font-size: 0.67rem;
     }
 }
 
 @media (min-width: 460px) and (max-width: 570px) {
-    .service-section__header--title {
-        font-size: 1.5rem;
+    .footer {
+        font-size: 0.85rem;
     }
 }
 
 @media (min-width: 570px) and (max-width: 620px) {
-    .service-section__header--title {
-        font-size: 2rem;
+    .footer {
+        font-size: 0.95rem;
     }
 }
 
-@media (min-width: 620px) and (max-width: 760px) {
-    .service-section__header--title {
-        font-size: 2rem;
-    }
-}
-
-@media (min-width: 760px) and (max-width: 930px) {
-    .service-section__header--title {
-        font-size: 2rem;
-    }
-}
-
-@media (min-width: 930px) and (max-width: 1150px) {
-    .service-section__header--title {
-        font-size: 2.6rem;
-    }
-}
-
-@media (min-width: 1150px) and (max-width: 1360px) {
-    .service-section__header--title {
-        font-size: 2.6rem;
-    }
-}
-
-@media (min-width: 1360px) and (max-width: 1600px) {
-    .service-section__header--title {
-        font-size: 2.6rem;
+@media (min-width: 620px) and (max-width: 1600px) {
+    .footer {
+        font-size: 1rem;
     }
 }
 
 @media (min-width: 1600px) and (max-width: 2400px) {
-    .service-section__header--title {
-        font-size: 4rem;
-    }
-
-    .service-section__article--service {
-        width: 270px;
-        height: 126px;
-    }
-    
-    .service-section__article--service-hex {
-        width: 270px;
-        height: 234px;
-    }
-
-    .service-section__article--service-hex--desc {
-        font-size: 1rem;
-        padding: 18px 38px;
-        height: 234px;
+    .footer {
+        font-size: 1.2rem;
     }
 }
 
 @media (min-width: 2400px) {
-    .service-section__header--title {
-        font-size: 4rem;
-    }
-    
-    .service-section__article--service-hex--desc {
-        font-size: 1.5rem;
-        padding: 18px 38px;
-        height: 351px;
+    .footer {
+        font-size: 1.4rem;
     }
 }

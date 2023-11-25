@@ -33,7 +33,6 @@ body {
     user-select: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    padding-bottom: 10px;
 }
 
 ::-webkit-scrollbar {

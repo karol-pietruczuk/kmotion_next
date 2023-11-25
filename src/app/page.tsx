@@ -161,7 +161,7 @@ export default function Home() {
                         <a 
                         className='contact-section__article__details--email'
                         href='mailto:biuro@kmotion.pl'
-                        title='Wyślij do nas email na adres biuro@kmotion.pl'
+                        title='Wyślij do nas email na adres: biuro@kmotion.pl'
                         target="_blank"
                         >
                             <Image
@@ -179,7 +179,7 @@ export default function Home() {
                         <a 
                         className='contact-section__article__details--phone'
                         href="tel:+48 512 782 634"
-                        title='Zadzwoń do nas pod numer +48 512 782 634'
+                        title='Zadzwoń do nas pod numer: +48 512 782 634'
                         >
                             <Image
                                 className='contact-section__article__details--phone-icon'
@@ -189,14 +189,14 @@ export default function Home() {
                                 height={24}
                                 priority
                             />
-                            <u className='contact-section__article__details--phone-address'>
+                            <u className='contact-section__article__details--phone-number'>
                                 +48 512 782 634
                             </u>
                         </a>
                         <a 
                         className='contact-section__article__details--phone'
                         href="tel:+48 721 395 285"
-                        title='Zadzwoń do nas pod numer +48 721 395 285'
+                        title='Zadzwoń do nas pod numer: +48 721 395 285'
                         >
                             <Image
                                 className='contact-section__article__details--phone-icon'
@@ -206,7 +206,7 @@ export default function Home() {
                                 height={24}
                                 priority
                             />
-                            <u className='contact-section__article__details--phone-address'>
+                            <u className='contact-section__article__details--phone-number'>
                                 +48 721 395 285
                             </u>
                         </a>
@@ -215,13 +215,14 @@ export default function Home() {
                         <div className='contact-section__article__socials--desc'>
                             Znajdź nas
                         </div>
-                        <div className='contact-section__article__socials--icons'>
+                        <div className='contact-section__article__socials--content'>
                             <a 
-                            className='contact-section__article__socials--icons__instagram'
+                            className='contact-section__article__socials--content__instagram'
                             href="https://www.instagram.com/kmotion.pl/"
+                            title='Odwiedź nasz profil na Instagramie'
                             >
                                 <Image
-                                    className='contact-section__article__socials--icons__instagram-icon'
+                                    className='contact-section__article__socials--content__instagram-icon'
                                     src="/Instagram.svg"
                                     alt="Instagram icon"
                                     width={24}
@@ -230,11 +231,12 @@ export default function Home() {
                                 />
                             </a>
                             <a 
-                            className='contact-section__article__socials--icons__linkedin'
+                            className='contact-section__article__socials--content__linkedin'
                             href="https://www.linkedin.com/"
+                            title='Odwiedź nasz profil na LinkedInie'
                             >
                                 <Image
-                                    className='contact-section__article__socials--icons__linkedin-icon'
+                                    className='contact-section__article__socials--content__linkedin-icon'
                                     src="/LinkedIn.svg"
                                     alt="LinkedIn icon"
                                     width={24}
@@ -243,15 +245,16 @@ export default function Home() {
                                 />
                             </a>
                             <a 
-                            className='contact-section__article__socials--icons__tiktok'
+                            className='contact-section__article__socials--content__tiktok'
                             href="https://www.tiktok.com/@kmotion.pl"
+                            title='Odwiedź nasz profil na TikToku'
                             >
                                 <Image
-                                    className='contact-section__article__socials--icons__tiktok-icon'
+                                    className='contact-section__article__socials--content__tiktok-icon'
                                     src="/TikTok.svg"
                                     alt="TikTok icon"
-                                    width={24}
-                                    height={24}
+                                    width={30}
+                                    height={30}
                                     priority
                                 />
                             </a>  
@@ -259,7 +262,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <footer className='footer'>Created with Heart & Passion by KMotion | &copy;Copyright KMotion 2023</footer>
+            <footer className='footer'>
+                Created with Heart & Passion by KMotion | &copy;Copyright KMotion 2023
+            </footer>
         </>
     )
 }
