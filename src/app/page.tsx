@@ -1,15 +1,55 @@
 'use client'
 
 import Image from 'next/image';
-import './logo-section.css';
-import './service-section.css';
-import './recommendation-section.css';
-import './contact-section.css';
-import './footer.css';
-import useWindowDimensions from './hooks/useWindowDimension';
+import '@/app/logo-section.css';
+import '@/app/service-section.css';
+import '@/app/recommendation-section.css';
+import '@/app/contact-section.css';
+import '@/app/footer.css';
+import useWindowDimensions from '@/app/hooks/useWindowDimension';
 
 export default function Home() {
     const { width } = useWindowDimensions();
+    const services = [  
+        'Programowanie sterowników PLC, m.in. Allen Bradley, Eaton, Mitsubishi, Siemens',
+        'Tworzenie wizualizacji na panelach HMI, m.in. Galileo, Allen Bradley',
+        'Usuwanie usterek maszyn',
+        'Naprawa, przeróbki sterowania. Implementacja nowych systemów sterowania',
+        'Tworzenie stron internetowych i aplikacji',
+        'Prefabrykacja szaf sterowniczych',
+        'Programowanie i naprawa uszkodzonych przemienników częstotliwości, np. Delta, Danfoss, Omron, Lenze, Altivar',
+        'Implementacja serwomechnizmów, serwowzmaniaczy, serwomotorów, enkoderów',
+        'Tworzenie schematów elektrycznych i dokumentacji użytkownika'
+    ];
+
+    const recommendations = [
+        'Program napisany w sposób uporządkowany, umożliwiający rozbudowę systemu',
+        'Design wizualizacji w nowoczesnym stylu',
+        'Schemat elektryczny wykonany z uwzględnieniem najmniejszych szczegółów',
+        'Wsparcie powykonawcze Klienta',
+        'Pomoc w naprawie usterek i awarii',
+        'Indywidualne podejście do Klienta i problemu'
+    ];
+
+    const serviceElementsList = services.map((element, index) => (
+        <li className='service-section__article--list__item' key={index}>
+            <div className='service-section__article--list__item-hex'>
+                <p className='service-section__article--list__item-hex--desc'>{element}</p>
+            </div>
+        </li>
+        )
+    );
+
+    const recommendationElementsList = recommendations.map((element, index) => (
+        <li className='recommendation-section__article__list-item' key={index}>
+            <div className='recommendation-section__article__list-item--triangle'>
+                <div className='recommendation-section__article__list-item--triangle-implementation'></div>
+            </div>
+            <p className='recommendation-section__article__list-item--desc'>{element}</p>
+        </li>
+        )
+    );
+
     return (
         <>
             <section className='logo-section'>
@@ -37,51 +77,9 @@ export default function Home() {
                     </h2>
                 </header>
                 <article className='service-section__article'>
-                        <div className='service-section__article--service'>
-                            <div className='service-section__article--service-hex'>
-                                <p className='service-section__article--service-hex--desc'>Programowanie sterowników, m.in. Allen Bradley, Eaton, Mitsubishi, Siemens</p>
-                            </div>
-                        </div>
-                        <div className='service-section__article--service'>
-                            <div className='service-section__article--service-hex'>
-                                <p className='service-section__article--service-hex--desc'>Tworzenie wizualizacji na panelach HMI, m.in. Galileo, Allen Bradley</p>
-                            </div>
-                        </div>
-                        <div className='service-section__article--service'>
-                            <div className='service-section__article--service-hex'>
-                                <p className='service-section__article--service-hex--desc'>Usuwanie usterek maszyn</p>
-                            </div>
-                        </div>
-                        <div className='service-section__article--service'>
-                            <div className='service-section__article--service-hex'>
-                                <p className='service-section__article--service-hex--desc'>Naprawa/przeróbki sterowania</p>
-                            </div>
-                        </div>
-                        <div className='service-section__article--service'>
-                            <div className='service-section__article--service-hex'>
-                                <p className='service-section__article--service-hex--desc'>Tworzenie stron internetowych</p>
-                            </div>
-                        </div>
-                        <div className='service-section__article--service'>
-                            <div className='service-section__article--service-hex'>
-                            <p className='service-section__article--service-hex--desc'>Prefabrykacja szaf sterowniczych</p>
-                            </div>
-                        </div>
-                        <div className='service-section__article--service'>
-                            <div className='service-section__article--service-hex'>
-                                <p className='service-section__article--service-hex--desc'>Programowanie i naprawa uszkodzonych przemienników częstotliwości, np. Delta, Danfoss, Omron, Lenze, Altivar</p>
-                            </div>
-                        </div>
-                        <div className='service-section__article--service'>
-                            <div className='service-section__article--service-hex'>
-                                <p className='service-section__article--service-hex--desc'>Implementacja nowych systemów sterowania</p>
-                            </div>
-                        </div>
-                        <div className='service-section__article--service'>
-                            <div className='service-section__article--service-hex'>
-                                <p className='service-section__article--service-hex--desc'>Tworzenie schematów elektrycznych</p>
-                            </div>
-                        </div>
+                        <ul className='service-section__article--list'>
+                            {serviceElementsList}
+                        </ul>
                 </article>
             </section>
             <section className='recommendation-section'>
@@ -92,54 +90,7 @@ export default function Home() {
                 </header>
                 <article className='recommendation-section__article'>
                     <ul className='recommendation-section__article__list'>
-                        <li className='recommendation-section__article__list-item'>
-                            <div className='recommendation-section__article__list-item--triangle'>
-                                <div className='recommendation-section__article__list-item--triangle-implementation'></div>
-                            </div>
-                            <p className='recommendation-section__article__list-item--desc'>
-                                Program napisany w sposób uporządkowany, umożliwiający rozbudowę systemu
-                            </p>
-                        </li>
-                        <li className='recommendation-section__article__list-item'>
-                            <div className='recommendation-section__article__list-item--triangle'>
-                                <div className='recommendation-section__article__list-item--triangle-implementation'></div>
-                            </div>
-                            <p className='recommendation-section__article__list-item--desc'>
-                                Design wizualizacji w nowoczesnym stylu
-                            </p>
-                        </li>
-                        <li className='recommendation-section__article__list-item'>
-                            <div className='recommendation-section__article__list-item--triangle'>
-                                <div className='recommendation-section__article__list-item--triangle-implementation'></div>
-                            </div>
-                            <p className='recommendation-section__article__list-item--desc'>
-                                Schemat elektryczny wykonany z uwzględnieniem najmniejszych szczegółów
-                            </p>
-                        </li>
-                        <li className='recommendation-section__article__list-item'>
-                            <div className='recommendation-section__article__list-item--triangle'>
-                                <div className='recommendation-section__article__list-item--triangle-implementation'></div>
-                            </div>
-                            <p className='recommendation-section__article__list-item--desc'>
-                                Wsparcie powykonawcze
-                            </p>
-                        </li>
-                        <li className='recommendation-section__article__list-item'>
-                            <div className='recommendation-section__article__list-item--triangle'>
-                                <div className='recommendation-section__article__list-item--triangle-implementation'></div>
-                            </div>
-                            <p className='recommendation-section__article__list-item--desc'>
-                                Pomoc w naprawie usterek i awarii
-                            </p>
-                        </li>
-                        <li className='recommendation-section__article__list-item'>
-                            <div className='recommendation-section__article__list-item--triangle'>
-                                <div className='recommendation-section__article__list-item--triangle-implementation'></div>
-                            </div>
-                            <p className='recommendation-section__article__list-item--desc'>
-                                Indywidualne podejście do klienta i problemu
-                            </p>
-                        </li>
+                        {recommendationElementsList}
                     </ul>
                 </article>
             </section>
@@ -220,6 +171,7 @@ export default function Home() {
                             className='contact-section__article__socials--content__instagram'
                             href="https://www.instagram.com/kmotion.pl/"
                             title='Odwiedź nasz profil na Instagramie'
+                            target="_blank"
                             >
                                 <Image
                                     className='contact-section__article__socials--content__instagram-icon'
@@ -232,8 +184,9 @@ export default function Home() {
                             </a>
                             <a 
                             className='contact-section__article__socials--content__linkedin'
-                            href="https://www.linkedin.com/"
+                            href="https://www.linkedin.com/company/kmotionpl/"
                             title='Odwiedź nasz profil na LinkedInie'
+                            target="_blank"
                             >
                                 <Image
                                     className='contact-section__article__socials--content__linkedin-icon'
@@ -248,6 +201,7 @@ export default function Home() {
                             className='contact-section__article__socials--content__tiktok'
                             href="https://www.tiktok.com/@kmotion.pl"
                             title='Odwiedź nasz profil na TikToku'
+                            target="_blank"
                             >
                                 <Image
                                     className='contact-section__article__socials--content__tiktok-icon'

@@ -1,7 +1,6 @@
 .contact-section {
     display: flex;
     height: 95vh;
-    scroll-snap-align: start;
 }
 
 .contact-section__decoration {
@@ -11,8 +10,7 @@
 }
 
 .contact-section__decoration--rectangle {
-    /* background: rgb(180,34,71); */
-    background: radial-gradient(circle, rgba(180,34,71,1) 0%, rgba(2,0,36,1) 30%, rgba(0,0,0,0) 60%);
+    background: -webkit-radial-gradient(circle, rgba(180,34,71,1) 0%, rgba(2,0,36,1) 40%, rgba(0,0,0,0) 90%);
     background-attachment: fixed;
     border-radius: 3vw;
     width: 6vw;
@@ -139,7 +137,7 @@
     }
 
     .contact-section__decoration--rectangle {
-        background: radial-gradient(circle, rgba(180,34,71,1) 0%, rgba(2,0,36,1) 35%, rgba(0,0,0,0) 70%);
+        background: -webkit-radial-gradient(circle, rgba(180,34,71,1) 0%, rgba(2,0,36,1) 45%, rgba(0,0,0,0) 90%);
         background-attachment: fixed;
     }
 
@@ -176,7 +174,7 @@
     }
 
     .contact-section__decoration--rectangle {
-        background: radial-gradient(circle, rgba(180,34,71,1) 0%, rgba(2,0,36,1) 45%, rgba(0,0,0,0) 77%);
+        background: -webkit-radial-gradient(circle, rgba(180,34,71,1) 0%, rgba(2,0,36,1) 55%, rgba(0,0,0,0) 95%);
         background-attachment: fixed;
     }
 
@@ -213,7 +211,7 @@
     }
 
     .contact-section__decoration--rectangle {
-        background: radial-gradient(circle, rgba(180,34,71,1) 0%, rgba(2,0,36,1) 47%, rgba(0,0,0,0) 88%);
+        background: -webkit-radial-gradient(circle, rgba(180,34,71,1) 0%, rgba(2,0,36,1) 57%, rgba(0,0,0,0) 98%);
         background-attachment: fixed;
     }
 
@@ -243,3 +241,10 @@
         height: 60px;
     }
 }
+
+@media (prefers-color-scheme: light) {
+    .contact-section__decoration--rectangle {
+        background: -webkit-radial-gradient(circle, rgba(180,34,71,1) 0%, rgba(2,0,36,1) 80%, rgba(0,0,0,1) 98%);
+        background-attachment: fixed;
+    }
+  }

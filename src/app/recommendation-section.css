@@ -1,5 +1,4 @@
 .recommendation-section {
-    scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -103,7 +102,7 @@
     }
 }
 
-@media (min-width: 355px) and (max-width: 460px) {
+@media (min-width: 355px) and (max-width: 570px) {
     .recommendation-section__header--title {
         font-size: 1.5rem;
     }
@@ -117,21 +116,7 @@
     }
 }
 
-@media (min-width: 460px) and (max-width: 570px) {
-    .recommendation-section__header--title {
-        font-size: 1.5rem;
-    }
-    
-    .recommendation-section__article__list-item {
-        column-gap: 3vw;
-    }
-
-    .recommendation-section__article__list-item--desc {
-        font-size: 0.9rem;
-    }
-}
-
-@media (min-width: 570px) and (max-width: 620px) {
+@media (min-width: 570px) and (max-width: 930px) {
     .recommendation-section__header--title {
         font-size: 2rem;
     }
@@ -145,35 +130,7 @@
     }
 }
 
-@media (min-width: 620px) and (max-width: 760px) {
-    .recommendation-section__header--title {
-        font-size: 2rem;
-    }
-    
-    .recommendation-section__article__list-item {
-        column-gap: 3vw;
-    }
-
-    .recommendation-section__article__list-item--desc {
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: 760px) and (max-width: 930px) {
-    .recommendation-section__header--title {
-        font-size: 2rem;
-    }
-    
-    .recommendation-section__article__list-item {
-        column-gap: 3vw;
-    }
-
-    .recommendation-section__article__list-item--desc {
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: 930px) and (max-width: 1150px) {
+@media (min-width: 930px) and (max-width: 1600px) {
     .recommendation-section__header--title {
         font-size: 2.6rem;
     }
@@ -189,50 +146,8 @@
     .recommendation-section__article__list-item--triangle-implementation, 
     .recommendation-section__article__list-item--triangle-implementation:before, 
     .recommendation-section__article__list-item--triangle-implementation:after {
-        width:  1.5rem;
-        height: 1.5rem;
-    }
-}
-
-@media (min-width: 1150px) and (max-width: 1360px) {
-    .recommendation-section__header--title {
-        font-size: 2.6rem;
-    }
-    
-    .recommendation-section__article__list-item {
-        column-gap: 2vw;
-    }
-
-    .recommendation-section__article__list-item--desc {
-        font-size: 1.2rem;
-    }
-
-    .recommendation-section__article__list-item--triangle-implementation, 
-    .recommendation-section__article__list-item--triangle-implementation:before, 
-    .recommendation-section__article__list-item--triangle-implementation:after {
-        width:  1.5rem;
-        height: 1.5rem;
-    }
-}
-
-@media (min-width: 1360px) and (max-width: 1600px) {
-    .recommendation-section__header--title {
-        font-size: 2.6rem;
-    }
-    
-    .recommendation-section__article__list-item {
-        column-gap: 2vw;
-    }
-
-    .recommendation-section__article__list-item--desc {
-        font-size: 1.2rem;
-    }
-
-    .recommendation-section__article__list-item--triangle-implementation, 
-    .recommendation-section__article__list-item--triangle-implementation:before, 
-    .recommendation-section__article__list-item--triangle-implementation:after {
-        width:  1.5rem;
-        height: 1.5rem;
+        width:  1.6rem;
+        height: 1.6rem;
     }
 }
 
@@ -273,7 +188,7 @@
     .recommendation-section__article__list-item--triangle-implementation, 
     .recommendation-section__article__list-item--triangle-implementation:before, 
     .recommendation-section__article__list-item--triangle-implementation:after {
-        width:  3rem;
-        height: 3rem;
+        width:  2.9rem;
+        height: 2.9rem;
     }
 }
